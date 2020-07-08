@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parancsok</title>
+</head>
+
+<body>
+    <h1 id="start"> Parancsok</h1>
+    <table>
+        <table>
+            <caption>
+                <h2>Címsorok</h2>
+            </caption>
+            <tr>
+                <td>
+                    <p>A címsorok neve <b>h </b>(heading) betűvel kezdődik.
+                        A h1 a legnagyobb, utána csökken a sorrend egészen a h6-ig.
+                </td>
+                <td>
+                    <h1>H1</h1>
+                </td>
+                <td>
+                    <h2>H2</h2>
+                </td>
+                <td>
+                    <h3>H3</h3>
+                </td>
+                <td>
+                    <h4>H4</h4>
+                </td>
+                <td>
+                    <h5>H5</h5>
+                </td>
+                <td>
+                    <h6>H6</h6>
+                </td>
+
+                </p>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                <h2>Szövegformázás</h2>
+            </caption>
+            <tr>
+                <td>
+                    <p>Az <b>'em'</b>elem, másképp <b>'b'</b> elem a tartalmát, hangsúlyozottan, <b> kiemelt szövegként
+                        </b>
+                        jeleníti
+                        meg.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>A <i>'strong'</i> elem, másképp <i>'i'</i> is <i>szövegek formázására</i> való. Ez egy fontosabb
+                        szövegrészletet
+                        határoz meg.</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                <h2>Navigáció és hivatkozások</h2>
+            </caption>
+            <tr>
+                <p>
+                    <td> Az <b>'a'</b> elem <i>'href'</i> attribútumában adom meg, hogy hova szeretnék átnavigálni. A
+                        parancssor
+                        végére,
+                        a '>'
+                        mögé, de
+                        még a záróelem elé a kiíírandó szöveg kerül. <img src="linkelés.JPG" alt="így néz ki">
+                </p>
+                <p> Teszteljük: <a href="https://www.w3schools.com/">kattints ide!</a></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Ha azt szeretnénk, hogy a hivatkozásunk új ablakban nyíljon meg, a <b>'target'</b> attribútumot
+                        kell
+                        használnunk
+                        a parancson belül a <i>'blank'</i> értékkel.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="IDugras">Ha az oldalon belül szeretnék ugrálni, akkor az elemeken belül az 'id' paranccsal
+                        beszúrhatok egy
+                        nevet az
+                        adott részhez. </p>
+                    <p>Például: <img src="id parancs.JPG" alt="szemléltető kép">
+                    </p>
+
+                    <p>Ha adtunk ID-t az egyes részeknek, az URL mögé '#' után beírva odaugorhatunk az adott részhez.
+                        <b>Próbáld
+                            ki:
+                            #start</b> (Ez elvileg visszanavigál az oldal tetejére.)
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                <h2>Képek</h2>
+            </caption>
+            <tr>
+                <td>
+                    <p>Az <b>'img'</b> elem <i>'src'</i> (source=forrás) attribútumában adjuk meg a kép forráshelyét, az
+                        <i>'alt'</i>
+                        attribútumba pedig a helyettesítő szöveget adjuk meg arra az esetre, ha a kép valamiért nem tud
+                        megjelenni.</p>
+                    <p> A
+                        kép méretét változtathatjuk a <b>'width'</b> attribútummal. </p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                <h2>Listák</h2>
+            </caption>
+            <tr>
+                <td>
+                    <p id="listák">Ha listákat szeretnék létrehozni, két lehetőség áll rendelkezésemre.</p>
+                    <p>Az egyik lehetőség az <b>'ul' </b> parancs. Ez az Unordered List kifejezésből ered, és egy sima
+                        listát kreál,
+                        lásd:</p>
+                    <p>A másik lehetőség az <b>'ol' </b> parancs. Ez az Ordered List kifejezésből ered, és egy számozott
+                        listát kreál,
+                        lásd:</p>
+
+                </td>
+                <td>
+
+                    <ul>
+                        <h3>Sima ista minta</h3>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                    </ul>
+                </td>
+                <td>
+
+                    <ol>
+                        <h3>Számozott lista minta</h3>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                        <li> List item <b>'li'</b> magyarul lista elem </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>
+                <h2>Táblázatok</h2>
+            </caption>
+            <tr>
+                <td>
+                    <p> Ha táblázatot szeretnénk készíteni, a <b> 'table'</b> elemmel tehetjük meg.</p>
+                    <p> Címet a <b>'Caption'</b> paranccsal tudunk adni neki.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <p>A cím után jön a fejléc. Fejlécet a <b>'thead'</b> paranccsal készíthetünk.</p>
+                <p> A <b>'tr'</b> elemmel
+                    hozzuk létre a sort, és <b>'th'</b> elemmel a fejléc celláit.</p>
+            </tr>
+
+            <tr>
+                <td>
+                    <p> A címsort a törzs <b>'tbody'</b> követi.</p>
+                    <p> A táblázaton belül a<b> 'tr'</b> elemmel hozunk létre új
+                        sort, soron belül pedig a <b>'td'</b>
+                        paranccsal készítünk cellát.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> A táblázat utolsó része a lábjegyzet, azaz <b>'tfoot'</b>, ahol összegzést tudunk elhelyezni az
+                        adatokról.</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <caption>
+                <h2>Cellaformázás</h2>
+            </caption>
+            <tr>
+                <td>A cellák formázására kétféle attribútumot használhatunk a <b>'td'</b> illetve a <b>'th'</b>
+                    parancsokon belül.</td>
+            </tr>
+            <tr>
+                <td>Az egyik a <b>'rowspan'</b>, mellyel a cella magasságát növelhetjük,</td>
+                <td> a másik pedig a <b>'colspan'</b>, ami a cella szélességére van hatással.</td>
+            </tr>
+        </table>
+        <tr></tr>
+    </table>
+
+    <a href="http://127.0.0.1:5500/Kezd%C5%91lap.html">Vissza a kezdőlapra</a>
+
+</body>
+
+</html>

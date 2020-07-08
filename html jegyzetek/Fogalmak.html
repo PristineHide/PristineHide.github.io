@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fogalmak</title>
+</head>
+<body>
+    <h1>Fogalmak</h1>
+    <h2>Tartalomjegyzék</h2>
+<ul>
+    <li> <h3><a href="http://127.0.0.1:5500/html%20jegyzetek/Fogalmak.html#blokk">Blokk szintű elemek</a></h3> </li>
+    <li> <h3><a href="http://127.0.0.1:5500/html%20jegyzetek/Fogalmak.html#inline">Inline elemek</a></h3> </li>
+    <li> <h3><a href="http://127.0.0.1:5500/html%20jegyzetek/Fogalmak.html#URLfelepitese">URL felépítése</a></h3> </li>
+    <li> <h3><a href="http://127.0.0.1:5500/html%20jegyzetek/Fogalmak.html#URLagyazas">URL beágyazása</a></h3> </li>
+    <li> <h3><a href="http://127.0.0.1:5500/html%20jegyzetek/Fogalmak.html#oldalonbelul">Navigáció az oldalon belül</a></h3> </li>
+
+
+
+</ul>
+    <h2 id="blokk">Blokk szintű elemek:</h2>
+
+        <p> A blokk szintű elemek mindig új sorban kezdődnek, és akkor sem kerülnek másik elem mellé, ha
+        amúgy elférnének tőle. Azaz előttük utánuk sortörés van és általában nagyobb margóval rendelkeznek, távolabb
+        vannak a többi elemtől.
+    </p>
+   <h2 id="inline"> Inline elemek: </h2>
+
+        <p> Mivel minden elem ami nem blokk szintű elem az inline, ezért ezeket külön nem sorolnám fel. Amit
+        meg kell róluk jegyezni, hogy sorban egymás mellé teszi őket a böngésző, egészen addig amíg kiférnek. Ha már
+        nem, akkor egy új sorban folytatja a megjelenítésüket.
+    </p>
+    
+    <h2 id="URLfelepitese">URL felépítése</h2>
+
+    <p>Egy példa:</p>
+    <p><b> https://www.training360.com/tanfolyami-naptar</b></p>
+    <p> A <b>https</b> a használandó protokoll. A protokoll neve után kettőspont (:) írandó.
+    </p>
+    <p> A <b>training360.com</b> a célgép tartományneve. Ez elé két perjel (//) írandó.
+    </p>
+
+    <p> A <b>443</b> a célgép azon hálózati portszáma, amin kérésünket várja; ez elé kettőspont (:) írandó. Ezt a
+        részt
+        gyakran
+        teljesen elhagyhatjuk, például esetünkben a HTTPS protokoll alapértelmezett portszáma a 443. <i> // ezt a
+            sort
+            kurvára nem értem, de OK.</i>
+    </p>
+    <p> A <b>/tanfolyami-naptar </b>a kért elérési út a célgépen. Ez a rész mindig a perjellel (/) kezdődik.x
+    </p>
+    <p>Egyszerűbben:</p>
+    <p>A <b>www.training360.com a domain, azaz a ROOT URL</b>. Ez a gyökere a weboldalnak. </p>
+    <p>Ha az oldalon elkezdek navigálni, és például elmegyek a tanfolyami naptár oldalra, <b> a domain nem változik
+            meg,
+            csak kiegészül az URL (/tanfolyami-naptar). Ezt a kiegészítést relatív útvonalnak nevezzük</b>, ez
+        mutatja
+        meg, hogy adott domainen belül
+        hova szeretnénk elnavigálni. </p>
+      
+    <h2 id="URLagyazas">URL beágyazása</h2>
+
+    <p>Ha beágyazáskor megadom teljes hosszában a domain nevet, és azon belül az adott aloldalt is, (a fenti példa
+        szerint ez így nézne ki: https://www.training360.com/tanfolyami-naptar) akkor azt <b>abszolút URL</b> -nek
+        nevezzük.</p>
+
+    
+    <p>Ha a megadni kívánt elérés ugyanazon mappában, ugyanazon szerveren található mint a kiindulási pontunk, akkor
+        elég megadni a <b>relatív elérési utat</b> (tanfolyami-naptar). Ha így adom meg az elérési utat, akkor a
+        böngésző az azonos mappában fogja keresni a 'tanfolyami naptár' nevű fájlt. Előnye, hogy ha átköltöztetem a
+        weboldalamat egy másik domainre, nem kell változtatnom az elérési utakon, mert egymáshoz képest a fájloknak
+        a
+        helyzete nem fog változni.</p>
+    <p>A <b>ROOT URL</b> (/tanfolyami-naptar) ugyanúgy működik, mint a relatív URL, azzal a különbséggel, hogy
+        mindig a
+        domain névtől nézi a címet. </p>
+
+    <h2 id="oldalonbelul">Oldalon belüli ugrás</h2>
+<p> <a href="http://127.0.0.1:5500/html%20jegyzetek/Parancsok.html#IDugras">Az oldalon belüli ugrálást</a>  lehetővé tevő elemet <b>ANCOR URL</b>-nek nevezzük.</p>
+ 
+<a href="http://127.0.0.1:5500/Kezd%C5%91lap.html">Vissza a kezdőlapra</a>
+
+</body>
+</html>
